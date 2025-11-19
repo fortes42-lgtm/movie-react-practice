@@ -1,0 +1,6 @@
+// .prettierrc
+{
+  "tailwindStylesheet": "src/index.css",
+  "plugins": ["prettier-plugin-tailwindcss"]
+} 
+  "tailwindStylesheet": "./resources/css/app.css"
