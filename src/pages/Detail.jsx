@@ -1,5 +1,4 @@
-// src/pages/Detail.jsx (Next step in our plan)
-import { useParams } from "react-router-dom";
+import { useParams } from "react-router";
 // ... import data fetching and state hooks
 
 export const Detail = () => {
