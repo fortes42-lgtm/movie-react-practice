@@ -1,6 +1,5 @@
-// src/pages/NotFound.jsx
 import { Link } from "react-router";
-import { TEXT_STYLES } from "../constants/style";
+import { TEXT_STYLES } from "@/constants/style.js";
 
 export const NotFound = () => {
   return (
@@ -9,9 +8,14 @@ export const NotFound = () => {
       <p className="text-xl text-gray-600">
         Sorry, the page you are looking for does not exist.
       </p>
-      <Link to="/" className={TEXT_STYLES.BLUE_LINK}>
+      <Link
+        to="/"
+        className={`mt-6 inline-block px-4 py-2 rounded ${TEXT_STYLES.BLUE_LINK}`}
+      >
         Go to Home
       </Link>
     </div>
   );
 };
+
+export default NotFound;

@@ -1,17 +1,16 @@
-import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router";
-import { Home } from "./pages/Home.jsx";
-import { Detail } from "./pages/Detail.jsx";
-import { NotFound } from "./pages/NotFound.jsx";
+import Home from "@/pages/Home.jsx";
+import Detail from "@/pages/Detail.jsx";
+import NotFound from "@/pages/NotFound.jsx";
 
-// Define routes array
+// 라우트 정의
 const APP_ROUTES = [
   { element: <Home />, path: "/" },
   { element: <Detail />, path: "/detail/:id" },
   { element: <NotFound />, path: "*" },
 ];
 
-// map through routes to create Route components
+// 라우트 컴포넌트 생성 및 맵핑
 function App() {
   return (
     <>
