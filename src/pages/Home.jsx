@@ -5,6 +5,8 @@ import { TEXT_STYLES } from "@/constants/style.js";
 import { fetchMovies } from "@/api/movieApi";
 import 
 import { ENDPOINTS } from "@/constants/api_endpoints";
+import Routes from "@/constants/routes.js";
+import { TEXT_STYLES } from "@/constants/style.js";
 
 const Home = () => {
   return (
