@@ -2,6 +2,26 @@
   "compilerOptions": {
     "baseUrl": "src",
     "paths": {
+      "@/*": ["*"],
+      "@assets": ["assets"],
+      "@assets/*": ["assets/*"],
+      "@components": ["components"],
+      "@components/*": ["components/*"],
+      "@pages": ["pages"],
+      "@pages/*": ["pages/*"],
+      "@utils": ["utils"],
+      "@utils/*": ["utils/*"],
+      "@constants": ["constants"],
+      "@constants/*": ["constants/*"],
+      "@api": ["api"],
+      "@api/*": ["api/*"],
+      "@hooks": ["hooks"],
+      "@hooks/*": ["hooks/*"],
+      "@contexts": ["contexts"],
+      "@contexts/*": ["contexts/*"]
+    }
+  },
+  "include": ["src/**/*"]
       "@/*": ["*"]
     }
   },

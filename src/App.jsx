@@ -1,4 +1,13 @@
 import { BrowserRouter, Routes, Route } from "react-router";
+import { Home, Detail, NotFound } from "@/pages";
+import MainLayout from "@/components/layout/MainLayout.jsx";
+import { ROUTE_PATHS } from "@/constants/url.js";
+
+// 라우트 정의
+const APP_ROUTES = [
+  { element: <Home />, path: ROUTE_PATHS.HOME },
+  { element: <Detail />, path: ROUTE_PATHS.DETAIL },
+  { element: <NotFound />, path: ROUTE_PATHS.NOT_FOUND },
 import Home from "@/pages/Home.jsx";
 import Detail from "@/pages/Detail.jsx";
 import NotFound from "@/pages/NotFound.jsx";
@@ -16,6 +25,15 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
+          <Route element={<MainLayout />}>
+            {APP_ROUTES.map((route) => (
+              <Route
+                element={route.element}
+                key={route.path}
+                path={route.path}
+              />
+            ))}
+          </Route>
           {APP_ROUTES.map((route) => (
             <Route element={route.element} key={route.path} path={route.path} />
           ))}
